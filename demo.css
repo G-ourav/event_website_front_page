@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  background-color: #f3f7ec;
+  /* height: 100vh; */
+  /* color: #f4f6f8; */
+}
+
+.spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+svg {
+  width: 80%;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  overflow: hidden;
+  /* opacity: 0.6; */
+  /* z-index: -1; */
+}
+
+section {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+}
+
+section:nth-of-type(2) {
+  background: rgb(38, 30, 11);
+}
+
+svg path {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  stroke-width: 4;
+  stroke: #006989;
+  fill: none;
+  /* transition: stroke-dashoffset 1s; */
+}
+a {
+  color: currentColor;
+  text-decoration-color: #005c78;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration-color: #000000;
+}
+
+svg.squiggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 600px) {
+  svg.squiggle {
+    height: 400vw;
+    width: 95vw;
+  }
+}
+
+@media (min-width: 900px) {
+  svg.squiggle {
+    height: 400vw;
+    width: 97vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  svg.squiggle {
+    height: 380vw;
+    width: 97vw;
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 400px) {
+  svg.squiggle {
+    height: 400vw;
+  }
+}
+svg.squiggle path {
+  stroke-width: 5px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wheel {
+  animation: spin 3s linear infinite;
+  z-index: -1;
+}
+
+.bluer {
+  background-image: url(./img//friut2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box {
+  width: 100px;
+  height: 100px;
+  /* background-color: #3498db; */
+}
+#box2 {
+  width: 50px;
+  height: 50px;
+  /* background-color: #3498db; */
+}
+#boll {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+
+  /* background-color: #3498db; */
+}
+
+/* subtle zoom to attention and then back */
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite;
+  z-index: 1;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(0);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+button {
+  --s: 0.25em; /* control the wave*/
+
+  padding: 0.4em 0.5em;
+  background-color: #e88d67;
+  color: #fff;
+  --_s: calc(var(--s) * 4) 51% repeat-x;
+  --_r: calc(1.345 * var(--s)) at left 50%;
+  --_g1: #000 99%, #0000 101%;
+  --_g2: #0000 99%, #000 101%;
+  --mask: radial-gradient(var(--_r) top calc(var(--s) * 1.9), var(--_g1))
+      calc(50% - 2 * var(--s) - var(--_i, 0px)) 0 / var(--_s),
+    radial-gradient(var(--_r) top calc(var(--s) * -0.9), var(--_g2)) calc(50% - var(--_i, 0px))
+      var(--s) / var(--_s),
+    radial-gradient(var(--_r) bottom calc(var(--s) * 1.9), var(--_g1))
+      calc(50% - 2 * var(--s) + var(--_i, 0px)) 100% / var(--_s),
+    radial-gradient(var(--_r) bottom calc(var(--s) * -0.9), var(--_g2)) calc(50% + var(--_i, 0px))
+      calc(100% - var(--s)) / var(--_s);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  clip-path: polygon(
+    calc(2 * var(--s) - var(--_i, 0px)) 0,
+    calc(100% - var(--_i, 0px)) 0,
+    calc(100% - var(--s)) 50%,
+    calc(100% - 2 * var(--s) + var(--_i, 0px)) 100%,
+    calc(0% + var(--_i, 0px)) 100%,
+    var(--s) 50%
+  );
+  cursor: pointer;
+  transition: 0.35s;
+}
+button.alt {
+  clip-path: polygon(
+    calc(0% - var(--_i, 0px)) 0,
+    calc(100% - 2 * var(--s) - var(--_i, 0px)) 0,
+    calc(100% - var(--s)) 50%,
+    calc(100% + var(--_i, 0px)) 100%,
+    calc(2 * var(--s) + var(--_i, 0px)) 100%,
+    var(--s) 50%
+  );
+}
+button:hover {
+  --_i: calc(2 * var(--s));
+}
+button.alt:hover {
+  --_i: calc(-2 * var(--s));
+}
+button:active {
+  background-image: linear-gradient(#0004 0 0);
+}
+button:focus-visible {
+  -webkit-mask: none;
+  clip-path: none;
+  outline-offset: 0.1em;
+  padding-block: 0.2em;
+  margin-block: 0.2em;
+  transition: 0s;
+}
+/* 
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  place-content: center;
+  background: #f6f7bd;
+} */
+button {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 768px) {
+  button {
+    font-size: 1.5rem; /* Adjust the font size for small screens */
+  }
+}
+
+nav {
+  background-color: #005c78;
+  color: #f3f7ec;
+}
+footer {
+  background-color: #005c78;
+  color: #f3f7ec;
+}
+div.mobile-menu-button {
+  background-color: #e88d67;
+  color: #f3f7ec;
+}
+div.mobile-menu-button:hover {
+  background-color: #728287;
+  color: #d1f299;
+}
+.nav_btn {
+  color: #f3f7ec;
+}
+.nav_btn:hover {
+  background-color: #e88d67;
+  color: #005c78;
+}
+.nav_btn_lg {
+  color: #f3f7ec;
+}
+.nav_btn_lg:hover {
+  /* color: #005c78; */
+  color: #e88d67;
+}
+#fotter_2 {
+  background-color: #00303f;
+}
+.lg2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
