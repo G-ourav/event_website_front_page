@@ -18,57 +18,7 @@
 
 
 
-  <nav class="shadow-lg">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex justify-between">
-        <div class="flex space-x-7">
-          <div>
-            <!-- Website Logo -->
-            <a href="#" class="flex items-center py-4 px-2">
-              <span class="font-semibold text-gray-500 text-lg">LOGO</span>
-            </a>
-          </div>
-          <!-- Primary Navbar items -->
-          <div class="hidden md:flex items-center space-x-1">
-            <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Home</a>
-            <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Services</a>
-            <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">About</a>
-            <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Contact Us</a>
-          </div>
-          <div id="boll" ></div>
-        </div>
-        <!-- Secondary Navbar items -->
-        <div class="hidden md:flex items-center space-x-3 ">
-          <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300">Log In</a>
-          <a href="" class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign Up</a>
-        </div>
-        <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
-          <div class="outline-none mobile-menu-button   p-2   rounded  hover:bg-red-400">
-            
-            <i class="fa fa-bars"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="hidden mobile-menu">
-      <ul class="">
-        <li><a href="index.html" class="block text-xl px-2 py-4  nav_btn font-semibold">Home</a></li>
-        <li><a href="#services" class="block text-xl px-2 py-4  nav_btn transition duration-300">Services</a></li>
-        <li><a href="#about" class="block text-xl px-2 py-4 nav_btn transition duration-300">About</a></li>
-        <li><a href="#contact" class="block text-xl px-2 py-4 nav_btn transition duration-300">Contact Us</a></li>
-      </ul>
-    </div>
-    <script>
-      const btn = document.querySelector("div.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
 
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-  </nav>
   <svg width="1116" height="2086" viewBox="0 0 1116 2086" fill="none" xmlns="http://www.w3.org/2000/svg"
     class=" squiggle">
     <path
@@ -76,25 +26,98 @@
       stroke="black" />
   </svg>
 
-  <div class= " ">
-    
-    <img src="img/welcome2.jpg" alt="Wheel" class=" w-full " />
-    <div class="flex text-2xl   flex-col justify-center items-center xl:px-20 2xl:px-40 lg:px-10 px-5 md:px-10 my-auto">
+  <div class=" ">
+    <nav class="shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Website Logo -->
+              <a href="#" class="flex items-center py-4 px-2">
+                <span class="font-semibold text-gray-500 text-lg">LOGO</span>
+              </a>
+            </div>
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Home</a>
+              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Services</a>
+              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">About</a>
+              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Contact Us</a>
+            </div>
+            <div id="boll"></div>
+          </div>
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-3 ">
+            <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300">Log
+              In</a>
+            <a href=""
+              class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign
+              Up</a>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <div class="outline-none mobile-menu-button   p-2   rounded  hover:bg-red-400">
+
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li><a href="index.html" class="block text-xl px-2 py-4  nav_btn font-semibold">Home</a></li>
+          <li><a href="#services" class="block text-xl px-2 py-4  nav_btn transition duration-300">Services</a></li>
+          <li><a href="#about" class="block text-xl px-2 py-4 nav_btn transition duration-300">About</a></li>
+          <li><a href="#contact" class="block text-xl px-2 py-4 nav_btn transition duration-300">Contact Us</a></li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("div.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+    <img src="img/2.png" alt="Wheel" class="lg:hidden mobile-menu w-full " />
+    <div
+      class="flex text-2xl lg:hidden mobile-menu   flex-col justify-center items-center xl:px-20 2xl:px-40 lg:px-10 px-5 md:px-10 my-auto">
       <h2 class="spicy-rice-regular  lg:text-7xl text-5xl tex py-10">
-        Leading the way in our field since 1993
+        we have been organizing vibrant and exciting melas since 1991
       </h2>
       <p class="">
-        <span class="text-3xl spicy-rice-regular "> Highlight Top Recipes : </span> Display a selection of
-        your best or most popular recipes with attractive images. Include a short description and
-        a link to the full recipe page.
+
+        bringing communities together for unforgettable
+        experiences. Our rich history and experience ensure that every carnival festival we organize is filled with joy,
+        entertainment, and cherished memories.
       </p>
-      <p class="">
-        <span class="text-3xl spicy-rice-regular"> Example : </span>Try our top-rated recipes: [Recipe Name
-        1], [Recipe Name 2], [Recipe Name 3]. Each one is crafted to perfection with step-by-step
-        instructions and tips.
-      </p>
+
       <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
         Get Ticket
+      </button>
+    </div>
+    <div
+      style="background-image: url('img/2.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh;"
+      class="md:flex text-2xl hidden    flex-col justify-center items-center xl:px-20 2xl:px-40 lg:px-10 px-5 md:px-10 my-auto">
+      <div class="grid grid-cols-2">
+        <div class="col-span-1">
+          <h2 class="spicy-rice-regular  lg:text-5xl text-3xl  py-10">
+            we have been organizing vibrant and exciting melas since 1991
+          </h2>
+          <p class="">
+
+            bringing communities together for unforgettable
+            experiences. Our rich history and experience ensure that every carnival festival we organize is filled with
+            joy,
+            entertainment, and cherished memories.
+          </p>
+
+          <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
+            Get Ticket
+        </div>
+      </div>
       </button>
     </div>
   </div>
@@ -115,7 +138,7 @@
   <div class="md:grid flex xl:px-20 2xl:px-40 lg:px-10 px-5  ooverflow-hidden flex-col-reverse grid-cols-2 py-5">
     <div class="py-10  overflow-hidden  md:my-auto">
       <div class="pop-outin   items-center justify-center flex">
-        <img src="img/welcome1.png" alt="" class="w-36 p-4 overflow-hidden bg-white rounded-full h-36" />
+        <img src="Untitled design/chole_bature.png" alt="" class="w-full p-4 overflow-hidden   " />
       </div>
     </div>
     <!-- <div class="py-10 overflow-hidden md:my-auto bg-red-200 h-48 w-48">
@@ -124,20 +147,68 @@
       </div>
     </div> -->
     <div class="px-5 md:px-10 my-auto">
-      <h2 class=" spicy-rice-regular   text-5xl tex py-10">
-        Leading the way in our field since 1993
+      <h2 class=" spicy-rice-regular   text-5xl  text-center py-10">
+        Food Stalls: A Culinary Adventure
       </h2>
-      
+
+
+
+
+
+
+
+
+
       <p class="">
-        <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
-        your best or most popular recipes with attractive images. Include a short description and
-        a link to the full recipe page.
+
+        Our carnival food stalls are a feast for the senses. We bring together a diverse range of food vendors, each
+        offering mouthwatering delicacies that cater to every palate. Here are some of the culinary highlights you can
+        expect at our festival
       </p>
       <p class="">
-        <span class="text-xl spicy-rice-regular"> Example : </span>Try our top-rated recipes: [Recipe Name
-        1], [Recipe Name 2], [Recipe Name 3]. Each one is crafted to perfection with step-by-step
-        instructions and tips.
+        <span class="text-2xl spicy-rice-regular"> नैन्सी सुपर सोफ्टी (Nancy Super Softy): </span>Indulge in the creamy
+        and delightful super softy ice creams that promise
+        to cool you down on a hot day. Known for their quality and hygiene, Nancy Super Softy offers a variety of
+        flavors
+        that are sure to satisfy your sweet tooth.
       </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular"> Khusbhu Super Softy:</span> Another fantastic stop for softy lovers,
+        Khusbhu Super Softy provides a hygienic and quality
+        food experience. Enjoy their delicious range of softy ice creams in a clean and inviting environment.
+
+      </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular"> Kajla Madras Cafe:</span> Savor the very best flavors from around the
+        country with Kajla Madras Cafe. Specializing in
+        South Indian breakfast food, they bring the authentic taste of the South to your plate with dishes like dosas,
+        idlis, and vadas, all made with love and tradition.
+      </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular"> Brijwasi Mathura Vaale:</span> For those craving traditional sweets
+        and snacks from Mathura, Brijwasi Mathura Vaale is a
+        must-visit. Known for their delectable sweets, they offer a taste of authentic Mathura delicacies that will
+        transport you to the heart of Uttar Pradesh.
+      </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular">Amily Restaurant:</span> Experience a culinary journey with Amily
+        Restaurant, offering a variety of dishes that cater to all tastes. From local favorites to international
+        cuisines, their menu is designed to provide a memorable dining experience for every visitor.
+
+      </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular">Tower Jhula:</span> Climb to new heights with the Tower Jhula, a ride
+        that lifts you up and lets you enjoy a panoramic view of the carnival.
+      </p>
+      <p class="">
+        <span class="text-2xl spicy-rice-regular">Nav Wala Jhula:</span> Set sail on the Nav Wala Jhula, a ship-themed
+        ride that swings back and forth, giving you the feeling of being on the high seas.
+      </p>
+      <p class="">
+        Our rides are meticulously maintained to ensure safety and enjoyment for all our guests.
+      </p>
+
+
       <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
         Get Ticket
       </button>
@@ -146,19 +217,43 @@
   <div class="md:grid xl:px-20 2xl:px-40 lg:px-10 px-5 flex flex-col md:grid-cols-2 py-5">
     <div class="px-5 md:px-10 my-auto">
       <h2 class=" spicy-rice-regular text-gray-700 text-5xl tex py-10">
-        Leading the way in our field since 1993
+        Home Appliances Bazaar: Convenience at Your Fingertips
       </h2>
 
-      
+
+
+
+
+
+
+
       <p class="">
-        <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
-        your best or most popular recipes with attractive images. Include a short description and
-        a link to the full recipe page.
+        Explore our exclusive home appliances bazaar, where you can find a wide range of products designed to make your
+        life easier and more comfortable. Our bazaar features leading brands that offer top-notch appliances and
+        electronics at competitive prices:
       </p>
       <p class="">
-        <span class="text-xl spicy-rice-regular"> Example : </span>Try our top-rated recipes: [Recipe Name
-        1], [Recipe Name 2], [Recipe Name 3]. Each one is crafted to perfection with step-by-step
-        instructions and tips.
+        <span class="text-xl spicy-rice-regular">Samsung Stall: </span> Discover the latest in cutting-edge technology
+        and stylish design. From smartphones and tablets to home entertainment systems and kitchen appliances, Samsung
+        provides innovative solutions to enhance your everyday life.
+
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Godrej Stall:</span> The Godrej Group is one of the largest players in
+        home appliances in India. At our carnival, you can find a comprehensive range of electronic items including TVs,
+        LCDs, DVDs, ACs, fridges, coolers, and more. Godrej is known for its quality and reliability, making it a
+        trusted choice for households.
+
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular">Lloyd Stall: </span> Lloyd offers a modern range of home appliances
+        designed for outstanding performance. Explore their offerings of washing machines, ACs, LED TVs, and chest
+        freezers. With Lloyd, you get appliances that combine efficiency with advanced technology.
+
+      </p>
+      <p class="">
+        Take advantage of special carnival discounts and promotions, and bring home appliances that will transform your
+        living space into a haven of convenience and efficiency.
       </p>
       <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
         Get Ticket
@@ -166,7 +261,7 @@
     </div>
     <div class="md:my-auto overflow-hidden py-10">
       <div class=" items-center justify-center flex">
-        <img src="img/welcome3bg.png" alt="" class="w-full h-full p-4  rounded-full " />
+        <img src="Untitled design/appliances.png" alt="" class="w-full h-full p-4  rounded-full " />
       </div>
     </div>
   </div>
@@ -178,19 +273,58 @@
     </div>
     <div class="px-5 md:px-10 my-auto">
       <h2 class=" spicy-rice-regular text-gray-700 text-5xl tex py-10">
-        Leading the way in our field since 1993
-      </h2>
+        Thrilling Rides: Fun for All Ages </h2>
 
-      
+
+
+
+
+
+
+
+
+
+
+
       <p class="">
-        <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
-        your best or most popular recipes with attractive images. Include a short description and
-        a link to the full recipe page.
+        Fun for All Ages
+        No carnival is complete without thrilling rides that get your adrenaline pumping. At our festival, we offer a
+        variety of rides that cater to different levels of excitement and age groups. Here are some of the exciting
+        rides you can enjoy
       </p>
       <p class="">
-        <span class="text-xl spicy-rice-regular"> Example : </span>Try our top-rated recipes: [Recipe Name
-        1], [Recipe Name 2], [Recipe Name 3]. Each one is crafted to perfection with step-by-step
-        instructions and tips.
+        <span class="text-xl spicy-rice-regular"> BreakDance Jhula: </span> Experience the exhilarating spins and twists
+        of the BreakDance Jhula, a ride that promises non-stop fun and excitement.
+
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Rocket Jhula: </span> Blast off on the Rocket Jhula for a thrilling
+        adventure that takes you on a high-speed journey through the air.
+
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Tora Tora Jhula:</span>
+        Enjoy the swirling motions of the Tora Tora Jhula, a ride that combines speed and rotation for a
+        truly dizzying experience.
+      </p>
+      <span class="text-xl spicy-rice-regular"> Camel Riding Jhula:</span> Take a unique ride on the Camel Riding Jhula,
+      a fun and gentle experience perfect for all
+      ages.
+      </p>
+      <p>
+        <span class="text-xl spicy-rice-regular"> Rope Jhula:</span> Swing high into the sky with the Rope Jhula, a
+        classic ride that offers a sense of freedom and joy.
+
+      </p>
+      <p>
+        <span class="text-xl spicy-rice-regular"> Ranger:</span> For the ultimate thrill, hop on the Ranger, a ride that
+        flips you upside down and provides a
+        heart-pounding experience.
+      </p>
+      <p>
+        <span class="text-xl spicy-rice-regular"> Asmani Jhula: </span>
+        Reach for the stars with the Asmani Jhula, a ride that offers breathtaking views and an exhilarating
+        ascent.
       </p>
       <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
         Get Ticket
@@ -201,19 +335,52 @@
   <div class="md:grid xl:px-20 2xl:px-40 lg:px-10 px-5 flex flex-col md:grid-cols-2 py-5">
     <div class="px-5 md:px-10 my-auto">
       <h2 class=" spicy-rice-regular text-gray-700 text-5xl tex py-10">
-        Leading the way in our field since 1993
-      </h2>
+        The Best Sports & Toys Places </h2>
 
-      
+
       <p class="">
-        <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
-        your best or most popular recipes with attractive images. Include a short description and
-        a link to the full recipe page.
+        In addition to our thrilling rides and delectable food stalls, we also offer a fantastic selection of sports and
+        toy vendors. These stalls are perfect for families and kids looking to bring home a piece of the carnival fun
+      </p>
+
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Sports Stalls: </span>From cricket bats to footballs, our sports
+        stalls
+        offer a wide variety of equipment for sports enthusiasts. Whether you're a budding athlete or just looking to
+        have some fun, you'll find everything you need to get active and enjoy some friendly competition.
       </p>
       <p class="">
-        <span class="text-xl spicy-rice-regular"> Example : </span>Try our top-rated recipes: [Recipe Name
-        1], [Recipe Name 2], [Recipe Name 3]. Each one is crafted to perfection with step-by-step
-        instructions and tips.
+        <span class="text-xl spicy-rice-regular"> Toy Stalls: </span>Our toy stalls are a treasure trove of fun and
+        excitement for children. From plush toys and action figures to puzzles and educational games, there's something
+        to delight every child. Let your little ones explore and choose their favorite toys to take home as a memento of
+        their carnival adventure.
+      <p class="">
+        <span class="text-xl spicy-rice-regular">Board Games and Puzzles: </span>Engage in brain-teasing fun with our
+        collection of
+        board games and puzzles. Whether you prefer classics like chess and Scrabble or modern strategy games, our
+        stalls have something to challenge and entertain players of all ages.
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Outdoor Play Equipment: </span>Encourage outdoor play with our range
+        of play
+        equipment, including swings, slides, and climbing frames. Designed for safety and durability, these items are
+        perfect for creating memorable moments of playtime with family and friends.
+      </p>
+
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Educational Toys: </span>Stimulate young minds with educational toys
+        that make learning fun. From alphabet blocks to science kits, our educational toy stalls offer interactive and
+        engaging activities that promote creativity and curiosity.
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Remote-Controlled Vehicles: </span> Explore the thrill of
+        remote-controlled vehicles, from cars and trucks to drones and helicopters. Perfect for enthusiasts of all ages,
+        these toys provide hours of entertainment as you navigate obstacles and race against friends.
+      </p>
+      <p class="">
+        <span class="text-xl spicy-rice-regular"> Creative Arts and Crafts:</span> Unleash your artistic side with our
+        arts and crafts stalls, offering everything from coloring books and crayons to DIY craft kits. Let creativity
+        flow and create unique masterpieces to take home as keepsakes of your carnival experience.
       </p>
       <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
         Get Ticket
@@ -221,7 +388,7 @@
     </div>
     <div class="md:my-auto overflow-hidden py-10">
       <div class=" items-center justify-center flex">
-        <img src="img/welcome4bg.png" alt="" class="w-full h-full p-4  " />
+        <img src="Untitled design/sports.png" alt="" class="w-full h-full p-4  " />
       </div>
     </div>
   </div>
@@ -236,7 +403,7 @@
         Leading the way in our field since 1993
       </h2>
 
-      
+
       <p class="">
         <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
         your best or most popular recipes with attractive images. Include a short description and
@@ -256,10 +423,10 @@
   <div class="md:grid xl:px-20 2xl:px-40 lg:px-10 px-5 flex flex-col md:grid-cols-2 py-5">
     <div class="px-5 md:px-10 my-auto">
       <h2 class=" spicy-rice-regular text-gray-700 text-5xl tex py-10">
-        Leading the way in our  field since 1993
+        Leading the way in our field since 1993
       </h2>
 
-     
+
       <p class="">
         <span class="text-2xl spicy-rice-regular"> Highlight Top Recipes : </span> Display a selection of
         your best or most popular recipes with attractive images. Include a short description and
@@ -281,13 +448,14 @@
     </div>
   </div>
 
-  <footer class=" bg-slate-700  ">
+  <footer class=" bg-slate-700  "
+    style="background-image: url('img/3.png'); background-size: cover; background-repeat: no-repeat; background-position: center; ">
 
 
     <div class=" md:grid gap-5 py-10 divide-x-2 grid-cols-5 px-20">
       <div class="col-span-1 ">
         <!-- <img class="w-full rounded-xl " src="./img/header_4.jpeg" /> -->
-         Logo
+        Logo
       </div>
       <div class=" px-5  col-span-3">
 
@@ -298,81 +466,79 @@
           Our mission is to engage people with cultural heritage and to improve history education worldwide.
         </p>
         <div class="pt-5 flex gap-2">
-        
+
         </div>
       </div>
     </div>
-   
+
     <div class="text-xl flex flex-col  gap-2 py-10 text-center">
-     
+
     </div>
-    <div id="box2" ></div>
+    <div id="box2"></div>
     <div id="fotter_2" class="md:flex justify-center py-5 md:divide-x-2   items-center text-center">
       <p class="px-2">Powered By JMD</p>
       <p class="px-2">Copyright © 2024 JMD</p>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.3"></script>
-<script>
-  const width = window.innerWidth;
-  gsap.to("#box", {
-    duration: 3, // Duration of the animation
-    x: 100,
-    y: -400,
-    rotation: 360, // Rotate 360 degrees
-    backgroundColor: "#e88d67", // Change background color
-    borderRadius: "50%", // Make the box circular
-    ease: "power2.inOut", // Easing function
-    yoyo: true, // Make the animation reverse back and forth
-    repeat: -1, // Repeat indefinitely
-  });
-  gsap.to("#box2", {
-    duration: 3, // Duration of the animation
-    x: 100,
-    y: -400,
-    rotation: 720, // Rotate 360 degrees
-    backgroundColor: "#e88d67", // Change background color
-    borderRadius: "50%", // Make the box circular
-    ease: "power2.inOut", // Easing function
-    yoyo: true, // Make the animation reverse back and forth
-    repeat: -1, // Repeat indefinitely
-  });
-  gsap.to("#boll", {
-    duration: 2, // Duration of the animation
-    x: 100,
-    rotation: 360, // Rotate 360 degrees
-    backgroundColor: "#e88d67", // Change background color
-    borderRadius: "50%", // Make the box circular
-    ease: "power2.inOut", // Easing function
-    yoyo: true, // Make the animation reverse back and forth
-    repeat: -1, // Repeat indefinitely
-  });
-  const myText = new SplitType("#my-text");
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.3"></script>
+  <script>
+    const width = window.innerWidth;
+    gsap.to("#box", {
+      duration: 3, // Duration of the animation
+      x: 100,
+      y: -400,
+      rotation: 360, // Rotate 360 degrees
+      backgroundColor: "#e88d67", // Change background color
+      borderRadius: "50%", // Make the box circular
+      ease: "power2.inOut", // Easing function
+      yoyo: true, // Make the animation reverse back and forth
+      repeat: -1, // Repeat indefinitely
+    });
+    gsap.to("#box2", {
+      duration: 3, // Duration of the animation
+      x: 100,
+      y: -400,
+      rotation: 720, // Rotate 360 degrees
+      backgroundColor: "#e88d67", // Change background color
+      borderRadius: "50%", // Make the box circular
+      ease: "power2.inOut", // Easing function
+      yoyo: true, // Make the animation reverse back and forth
+      repeat: -1, // Repeat indefinitely
+    });
+    gsap.to("#boll", {
+      duration: 2, // Duration of the animation
+      x: 100,
+      rotation: 360, // Rotate 360 degrees
+      backgroundColor: "#e88d67", // Change background color
+      borderRadius: "50%", // Make the box circular
+      ease: "power2.inOut", // Easing function
+      yoyo: true, // Make the animation reverse back and forth
+      repeat: -1, // Repeat indefinitely
+    });
+    const myText = new SplitType("#my-text");
 
-  const svg = document.querySelector("svg.squiggle");
-  const path = svg.querySelector("path");
+    const svg = document.querySelector("svg.squiggle");
+    const path = svg.querySelector("path");
 
-  const scroll = () => {
-    const distance = window.scrollY;
-    const totalDistance = svg.clientHeight - window.innerHeight;
+    const scroll = () => {
+      const distance = window.scrollY;
+      const totalDistance = svg.clientHeight - window.innerHeight;
 
-    // const percentage = distance / totalDistance ;
-    const percentage = distance / totalDistance ;
+      // const percentage = distance / totalDistance ;
+      const percentage = distance / totalDistance;
 
-    const pathLength = path.getTotalLength();
+      const pathLength = path.getTotalLength();
 
-    path.style.strokeDasharray = `${pathLength}`;
-    path.style.strokeDashoffset = `${(pathLength + 2500) * (1 - percentage)}`;
-  };
-  scroll();
-  window.addEventListener("scroll", scroll);
-</script>
+      path.style.strokeDasharray = `${pathLength}`;
+      path.style.strokeDashoffset = `${(pathLength + 2500) * (1 - percentage)}`;
+    };
+    scroll();
+    window.addEventListener("scroll", scroll);
+  </script>
 </body>
 
 </html>
-
-
