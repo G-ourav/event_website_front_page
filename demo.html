@@ -27,20 +27,14 @@
   </svg>
 
   <div class=" ">
-    <nav class="shadow-lg">
+    <nav class="md:hidden shadow-lg">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-          <div class="flex hidden mobile-menu space-x-7">
+        <div class="flex  justify-between">
+          <div class="flex  space-x-7">
             <div>
               <a href="#" class="flex items-center py-4 px-2">
-                <span class="font-semibold text-gray-500 text-lg">LOGO</span>
+                <span class="font-semibold text-gray-500 text-lg">Jai Kaila Maa</span>
               </a>
-            </div>
-            <div class="hidden md:flex items-center space-x-1">
-              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Home</a>
-              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Services</a>
-              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">About</a>
-              <a href="#" class="py-4 px-2  font-semibold nav_btn_lg transition duration-300">Contact Us</a>
             </div>
             <div id="boll"></div>
           </div>
@@ -60,12 +54,12 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden mobile-menu">
+      <div class=" mobile-menu">
         <ul class="">
           <li><a href="index.html" class="block text-xl px-2 py-4  nav_btn font-semibold">Home</a></li>
-          <li><a href="#services" class="block text-xl px-2 py-4  nav_btn transition duration-300">Services</a></li>
-          <li><a href="#about" class="block text-xl px-2 py-4 nav_btn transition duration-300">About</a></li>
-          <li><a href="#contact" class="block text-xl px-2 py-4 nav_btn transition duration-300">Contact Us</a></li>
+          <li><a href="#services" class="block text-xl px-2 py-4  nav_btn transition duration-300">Events</a></li>
+          <li><a href="#about" class="block text-xl px-2 py-4 nav_btn transition duration-300">Blogs</a></li>
+          <li><a href="#contact" class="block text-xl px-2 py-4 nav_btn transition duration-300"> Contact Us</a></li>
         </ul>
       </div>
       <script>
@@ -94,30 +88,33 @@
         Get Ticket
       </button>
     </div>
-    <div
+    <div class="hidden md:block"
       style="background-image: url('img/2.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh;">
       <div class="">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div class="flex space-x-7">
-              <div>
+              <div class="p-5">
                 <!-- Website Logo -->
-                <a href="#" class="flex items-center py-4 px-2">
-                  <span class="font-semibold text-gray-500 text-lg">LOGO</span>
+
+                <a href="#" class="flex items-center bg-red-400 rounded-full p-1">
+                  <span class="py-4 px-2 text-lime-400  font-bold text-2xl   transition duration-300"> Jai
+                    Kaila
+                    Maa</span>
                 </a>
               </div>
               <!-- Primary Navbar items -->
-              <div class="hidden md:flex items-center space-x-1">
-                <a href="#" class="py-4 px-2 text-lime-400  font-semibold  transition duration-300">Home</a>
-                <a href="#" class="py-4 px-2 text-lime-400  font-semibold  transition duration-300">Services</a>
-                <a href="#" class="py-4 px-2 text-lime-400  font-semibold  transition duration-300">About</a>
-                <a href="#" class="py-4 px-2 text-lime-400  font-semibold  transition duration-300">Contact
+              <div class="flex items-center space-x-1">
+                <a href="#" class="py-4 px-2 text-lime-400  font-semibold nav_btn_lg  transition duration-300">Home</a>
+                <a href="#" class="py-4 px-2 text-lime-400  font-semibold nav_btn_lg transition duration-300">Events</a>
+                <a href="#" class="py-4 px-2 text-lime-400  font-semibold nav_btn_lg transition duration-300">Blogs</a>
+                <a href="#" class="py-4 px-2 text-lime-400  font-semibold nav_btn_lg transition duration-300">Contact
                   Us</a>
               </div>
               <div id="boll"></div>
             </div>
             <!-- Secondary Navbar items -->
-            <div class="hidden md:flex items-center space-x-3 ">
+            <div class="flex items-center space-x-3 ">
               <a href=""
                 class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300">Log
                 In</a>
@@ -135,7 +132,7 @@
           </div>
         </div>
         <div
-          class="md:flex text-2xl hidden    flex-col justify-center items-center xl:px-20 2xl:px-40 lg:px-10 px-5 md:px-10 my-auto">
+          class="md:flex text-2xl     flex-col justify-center items-center xl:px-20 2xl:px-40 lg:px-10 px-5 md:px-10 my-auto">
 
           <div class="grid grid-cols-2">
             <div class="col-span-1">
@@ -173,36 +170,32 @@
       </div>
     </div>
   </div>
-  <div class="md:grid flex xl:px-20 2xl:px-40 lg:px-10 px-5  ooverflow-hidden flex-col-reverse grid-cols-2 py-5">
+
+  <div class="xl:px-20 2xl:px-40 lg:px-10 px-5 ">
+    <h2 class=" spicy-rice-regular   text-5xl  text-center py-10">
+      <span class="bg-red-400 p-5 rounded-full">
+        Food Stalls:
+      </span>
+      A Culinary Adventure
+
+    </h2>
+    <p class="">
+
+      Our carnival food stalls are a feast for the senses. We bring together a diverse range of food vendors, each
+      offering mouthwatering delicacies that cater to every palate. Here are some of the culinary highlights you can
+      expect at our festival
+    </p>
+  </div>
+  <div class="md:grid flex xl:px-20 2xl:px-40 lg:px-10 px-5  overflow-hidden flex-col-reverse grid-cols-2 py-5">
     <div class="py-10  overflow-hidden  md:my-auto">
       <div class="pop-outin   items-center justify-center flex">
         <img src="Untitled design/chole_bature.png" alt="" class="w-full p-4 overflow-hidden   " />
       </div>
     </div>
-    <!-- <div class="py-10 overflow-hidden md:my-auto bg-red-200 h-48 w-48">
-      <div class="pop-outin items-center justify-center flex">
-        <img src="img/welcome1.png" alt="" class="w-36 p-4 bg-white rounded-full h-36" />
-      </div>
-    </div> -->
+
+
     <div class="px-5 md:px-10 my-auto">
-      <h2 class=" spicy-rice-regular   text-5xl  text-center py-10">
-        Food Stalls: A Culinary Adventure
-      </h2>
 
-
-
-
-
-
-
-
-
-      <p class="">
-
-        Our carnival food stalls are a feast for the senses. We bring together a diverse range of food vendors, each
-        offering mouthwatering delicacies that cater to every palate. Here are some of the culinary highlights you can
-        expect at our festival
-      </p>
       <p class="">
         <span class="text-2xl spicy-rice-regular"> नैन्सी सुपर सोफ्टी (Nancy Super Softy): </span>Indulge in the creamy
         and delightful super softy ice creams that promise
@@ -216,6 +209,20 @@
         food experience. Enjoy their delicious range of softy ice creams in a clean and inviting environment.
 
       </p>
+
+
+      <button class=" text-white md:px-5 p-3 md:py-8 md:my-10 my-4 rounded ">
+        Get Ticket
+      </button>
+    </div>
+  </div>
+  <div class="md:grid flex xl:px-20 2xl:px-40 lg:px-10 px-5  overflow-hidden flex-col-reverse grid-cols-2 py-5">
+
+
+
+    <div class="px-5 md:px-10 my-auto">
+
+
       <p class="">
         <span class="text-2xl spicy-rice-regular"> Kajla Madras Cafe:</span> Savor the very best flavors from around the
         country with Kajla Madras Cafe. Specializing in
@@ -251,25 +258,39 @@
         Get Ticket
       </button>
     </div>
+    <div class="py-10  overflow-hidden  md:my-auto">
+      <div class="pop-outin   items-center justify-center flex">
+        <img src="Untitled design/chole_bature.png" alt="" class="w-full p-4 overflow-hidden   " />
+      </div>
+    </div>
+  </div>
+  <div class="xl:px-20 2xl:px-40 lg:px-10 px-5 ">
+    <h2 class=" spicy-rice-regular   text-5xl  text-center py-10">
+      <span class="bg-red-400 p-5 rounded-full">
+        Home Appliances
+      </span>
+      Bazaar: Convenience at Your Fingertips
+
+    </h2>
+    <p class="">
+      Explore our exclusive home appliances bazaar, where you can find a wide range of products designed to make your
+      life easier and more comfortable. Our bazaar features leading brands that offer top-notch appliances and
+      electronics at competitive prices:
+    </p>
+
+
+
+
+
+
+
+
+
+
   </div>
   <div class="md:grid xl:px-20 2xl:px-40 lg:px-10 px-5 flex flex-col md:grid-cols-2 py-5">
     <div class="px-5 md:px-10 my-auto">
-      <h2 class=" spicy-rice-regular text-gray-700 text-5xl tex py-10">
-        Home Appliances Bazaar: Convenience at Your Fingertips
-      </h2>
 
-
-
-
-
-
-
-
-      <p class="">
-        Explore our exclusive home appliances bazaar, where you can find a wide range of products designed to make your
-        life easier and more comfortable. Our bazaar features leading brands that offer top-notch appliances and
-        electronics at competitive prices:
-      </p>
       <p class="">
         <span class="text-xl spicy-rice-regular">Samsung Stall: </span> Discover the latest in cutting-edge technology
         and stylish design. From smartphones and tablets to home entertainment systems and kitchen appliances, Samsung
