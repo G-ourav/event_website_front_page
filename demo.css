@@ -17,7 +17,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-svg {
+.squiggle {
   width: 80%;
   position: fixed;
   top: 5%;
@@ -39,7 +39,7 @@ section:nth-of-type(2) {
   background: rgb(38, 30, 11);
 }
 
-svg path {
+.squiggle path {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
   stroke-width: 4;
@@ -268,6 +268,12 @@ div.mobile-menu-button:hover {
 }
 .nav_btn:hover {
   background-color: #e88d67;
+  color: #005c78;
+}
+.footer_btn {
+  color: #f3f7ec;
+}
+.footer_btn:hover {
   color: #005c78;
 }
 .nav_btn_lg {
